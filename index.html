@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Game - ПР 3_6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Персонаж 1 (Player 1) -->
+        <div class="pokemon" id="player1">
+            <span class="lvl">Lv. 1</span>
+            <div class="img-wrap">
+                <img src="" alt="Pikachu" class="sprite" id="img-player1">
+            </div>
+            <div class="details">
+                <h2 class="name" id="name-player1"></h2>
+                <div class="hp">
+                    <div class="bar">
+                        <div class="health" id="progressbar-player1" style="width: 100%;"></div>
+                    </div>
+                    <span class="text" id="health-player1">100 / 100</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кнопки керування атак -->
+        <div class="control">
+            <!-- Кнопки генеруватимуться динамічно через масив attacks -->
+        </div>
+
+        <!-- Персонаж 2 (Player 2) -->
+        <div class="pokemon" id="player2">
+            <span class="lvl">Lv. 1</span>
+            <div class="img-wrap">
+                <img src="" alt="Charmander" class="sprite" id="img-player2">
+            </div>
+            <div class="details">
+                <h2 class="name" id="name-player2"></h2>
+                <div class="hp">
+                    <div class="bar">
+                        <div class="health" id="progressbar-player2" style="width: 100%;"></div>
+                    </div>
+                    <span class="text" id="health-player2">100 / 100</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Контейнер для логів бою -->
+    <div id="logs" class="logs-container"></div>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
